@@ -15,7 +15,9 @@ public class Main {
       String strHex=null;
       String[]strOct=new String[n]; 
       for (int i = 0; i < str.length; i++) {
+        //将输入的十六进制字符串转化为二进制字符串
         strHex=toBinaty(str[i]);
+        //将二进制字符串转化为八进制字符串
         strOct[i]=toOct(strHex);
       } 
       for (int i = 0; i < strOct.length; i++) {
@@ -28,6 +30,7 @@ public class Main {
         StringBuilder sb2=new StringBuilder();
         sb.append(strHex);
         int length=strHex.length();
+        //补位操作
         if(length%3==0){}
         else if(length%3==1){sb.insert(0, "00");}
         else if(length%3==2) {sb.insert(0, '0');}
