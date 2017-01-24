@@ -1,4 +1,4 @@
-package PascialTriangle;
+package pascialTriangle;
 
 import java.util.Scanner;
 
